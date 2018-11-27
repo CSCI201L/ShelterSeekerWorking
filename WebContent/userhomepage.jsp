@@ -199,7 +199,7 @@
 		<form action="javascript:onSearch();">
 			<div class="form-group row">
 		     	<label class="col-sm-4 col-form-label">Must accept kids?</label>
-		     	<div class="col-vsm-1">
+		     	<div class="col-sm-1">
 		     		<input type="radio" id="criteriaKidsYes" name="criteriaKids" onclick="javascript:showNumKidsSection();"/>
 		     		<label for="criteriaKidsYes">Yes</label>
 		     	</div>

@@ -115,6 +115,7 @@
 	</nav>
 	<div class="mainSection">
 		<div class="container-fluid text-center" style="font-size:15px;">
+			<div class="col col-sm-6 " style="margin-left: 25%;">
 			<img id="pic" src="http://www-scf.usc.edu/~csci201/images/jeffrey_miller.jpg" width="100" height="100">
 			<div id="info">
 			<h3>Shelter Information</h3><br>
@@ -134,7 +135,7 @@
 			<br />
 			<br />
 			
-			<button id="goToShelterChatRoom" onclick="goToShelterChatRoom();">Enter Shelter Chat Room</button>
+			<button id="goToShelterChatRoom" class="btn btn-lg btn-default" onclick="goToShelterChatRoom();">Enter Shelter Chat Room</button>
 			<br />
 			<br />
 			<h4>Give this shelter a rating</h4>
@@ -150,7 +151,7 @@
 	        <label for="criteriaMinRating5"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></label>
 	        <br />
 			<br />
-	        <button id="requestSpot" onclick="clickRequestSpot();">Request a room</button>
+	        <button id="requestSpot"class="btn btn-lg btn-default" onclick="clickRequestSpot();">Request a room</button>
 			<br />
 			<br />
 			<div id="requestSpotSection">
@@ -168,6 +169,7 @@
 			</div>
 			<p id="confirmRequestSent">Your request has been sent!</p>
 			
+		</div>
 		</div>
 	</div>
 	<footer class="container-fluid text-center">
