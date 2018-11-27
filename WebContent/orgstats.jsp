@@ -77,9 +77,9 @@
 		</div>
 	    <ul class="nav navbar-nav">
 	   	 	<li><a style="font-size: 20px">Safe Hands</a></li>
-	      <li><a href="orgstats.jsp">My Stats</a></li>
+	      <li class="active"><a href="#">My Stats</a></li>
 	      <li><a href="usermessages.jsp">Messages</a></li>
-	      <li class="active"><a href="orgsettings.jsp">Settings</a></li>
+	      <li><a href="orgsettings.jsp">Settings</a></li>
 	    </ul>
 	     <ul class="nav navbar-nav navbar-right">
         	<li><a class="navbar-brand" href="signin.jsp">Sign Out</a></li>

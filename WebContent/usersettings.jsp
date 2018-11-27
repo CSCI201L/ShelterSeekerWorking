@@ -104,7 +104,7 @@
 	   	 	<li><a style="font-size: 20px">Safe Hands</a></li>
 	      <li><a href="userhomepage.jsp">Search</a></li>
 	      <li><a href="usermessages.jsp">Messages</a></li>
-	      <li><a href="usersettings.jsp">Settings</a></li>
+	      <li class="active"><a href="#">Settings</a></li>
 	    </ul>
 	     <ul class="nav navbar-nav navbar-right">
         	<li><a class="navbar-brand" href="signin.jsp">Sign Out</a></li>

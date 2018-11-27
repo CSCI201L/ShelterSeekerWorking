@@ -114,7 +114,7 @@
 	  </div>
 	</nav>
 	<div class="mainSection">
-		<div class="container-fluid">
+		<div class="container-fluid text-center" style="font-size:15px;">
 			<img id="pic" src="http://www-scf.usc.edu/~csci201/images/jeffrey_miller.jpg" width="100" height="100">
 			<div id="info">
 			<h3>Shelter Information</h3><br>
@@ -134,7 +134,7 @@
 			<br />
 			<br />
 			
-			<button id="goToShelterChatRoom" onclick="goToShelterChatRoom();">Shelter Chat Room</button>
+			<button id="goToShelterChatRoom" onclick="goToShelterChatRoom();">Enter Shelter Chat Room</button>
 			<br />
 			<br />
 			<h4>Give this shelter a rating</h4>

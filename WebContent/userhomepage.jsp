@@ -97,19 +97,19 @@
 		#searchForm {
 			margin: auto;
 			width: 90%;
-			border: 3px solid orange;
+			border: 3px solid white;
 			padding: 10px;
 			margin-top: 20px;
 			border-radius: 20px;
+			font-size: 15px;
 		}
 		#searchFormTitle {
 			text-align: center;
-			text-decoration: underline;
 		}
 		
 		#resultsTableSection {
 			margin: auto;
-			border: 3px solid orange;
+			border: 3px solid white;
 			width: 90%;
 			margin-top: 20px;
 			visibility: hidden;
@@ -138,7 +138,7 @@
 	        top: -2px;
 	        left: -1px;
 	        position: relative;
-	        background-color: #ffa500;
+	        background-color: #7a5ce5;
 	        content: '';
 	        display: inline-block;
 	        visibility: visible;
@@ -162,7 +162,7 @@
 	        top: -2px;
 	        left: -1px;
 	        position: relative;
-	        background-color: #ffa500;
+	        background-color: #7a5ce5;
 	        content: '';
 	        display: inline-block;
 	        visibility: visible;
@@ -195,11 +195,11 @@
 	</nav>
 	
 	<div id="searchForm">
-		<h4 id="searchFormTitle">Search for Shelters</h4>
+		<h2 id="searchFormTitle">Search for Shelters</h2>
 		<form action="javascript:onSearch();">
 			<div class="form-group row">
-		     	<label class="col-sm-4 col-form-label">I want to only see shelters that accept kids.</label>
-		     	<div class="col-sm-1">
+		     	<label class="col-sm-4 col-form-label">Must accept kids?</label>
+		     	<div class="col-vsm-1">
 		     		<input type="radio" id="criteriaKidsYes" name="criteriaKids" onclick="javascript:showNumKidsSection();"/>
 		     		<label for="criteriaKidsYes">Yes</label>
 		     	</div>
@@ -216,7 +216,7 @@
 		     </div>
 	        
 	        <div class="form-group row">
-		        <label class="col-sm-4 col-form-label">I want to only see shelters that allow for pets.</label>
+		        <label class="col-sm-4 col-form-label">Must allow for pets?</label>
 		        <div class="col-sm-1">
 			        <input type="radio" id="criteriaPetsYes" name="criteriaPets" onclick="javascript:showNumPetsSection();"/>
 			     	<label for="criteriaPetsYes">Yes</label>
@@ -234,20 +234,20 @@
 	        </div>
 	
 	        <div class="form-group row">
-		        <label class="col-sm-4 col-form-label">I want to only see shelters that are near these resources:</label>
-		        <div class="col-sm-2">
+		        <label class="col-sm-4 col-form-label">Must have a _____ nearby</label>
+		        <div class="col-sm-1">
 		        	<div class="form-check">
 		        		<input class="form-check-input" type="checkbox" id="criteriaPharmacy"/>
 		        		<label class="form-check-label" for="criteriaPharmacy">Pharmacy</label>
 		        	</div>
 		        </div>
-		        <div class="col-sm-2">
+		        <div class="col-sm-1">
 		        	<div class="form-check">
 		        		<input class="form-check-input" type="checkbox" id="criteriaGrocery"/>
 		        		<label class="form-check-label" for="criteriaGrocery">Grocery</label>
 		        	</div>
 		        </div>
-		        <div class="col-sm-2">
+		        <div class="col-sm-1">
 		        	<div class="form-check">
 		        		<input class="form-check-input" type="checkbox" id="criteriaLaundromat"/>
 		        		<label class="form-check-label" for="criteriaLaundromat">Laundromat</label>
@@ -256,10 +256,10 @@
 	        </div>
 	        
 	        <div class="form-group row"> 
-	       		<div class="col-sm-12">
+	       		<div class="col-sm-4">
 		        	<label>I want to only see shelters that have at least this Average User Rating: </label>
 		       	</div>
-		        <div class="col-sm-12">
+		        <div class="col-sm-4">
 			        <input type="radio" id="criteriaMinRating1" name="criteriaMinRating"/>
 			        <label for="criteriaMinRating1"><span class="glyphicon glyphicon-star"></span></label>
 			        <input type="radio" id="criteriaMinRating2" name="criteriaMinRating"/>
@@ -287,19 +287,19 @@
 	        
 	        <div class="form-group row">
 	        	<label class="col-sm-4 col-form-label" for="criteriaAddress">Search by Address<span class="glyphicon glyphicon-map-marker"></span></label>
-	        	<div class="col-sm-8">
+	        	<div class="col-sm-6">
 	        		<input class="form-control" type="text" id="criteriaAddress" value="<%=address %>" />
 	        	</div>
 	        </div>
 	        
 	        <div class="form-group row">
 	        	<label class="col-sm-4 col-form-label" for="criteriaSearchByName">Search by Shelter name (optional)</label>
-	        	<div class="col-sm-8">
+	        	<div class="col-sm-6">
 	        		<input class="form-control" type="text" id="criteriaSearchByName" />
 	        	</div>
 	        </div>
 	        
-	    	<button class="btn btn-dark" type="submit">Search for shelters near your location</button>	    	
+	    	<button style="margin-left: 40%;"class="btn btn-lg btn-default" type="submit">Search for shelters near your location</button>	    	
 	    </form>
 	</div> 
 	
@@ -449,7 +449,7 @@
 					} */
 					else currentCell.style.width ="250px";
 					if (j % numVariablesPerResponse != 4) currentCell.innerHTML = responseArray[i + j];
-					currentCell.style.borderTop = "1px solid orange";
+					currentCell.style.borderTop = "1px solid white";
 					currentCell.style.textAlign = "center";
 					
 					if ("<%=guest%>" != "true") {

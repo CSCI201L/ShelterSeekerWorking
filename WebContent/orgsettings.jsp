@@ -92,7 +92,7 @@
 	    <ul class="nav navbar-nav">
 	      <li><a href="orgstats.jsp">My Stats</a></li>
 	      <li><a href="usermessages.jsp">Messages</a></li>
-	      <li><a href="orgsettings.jsp">Settings</a></li>
+	      <li class="active"><a href="#">Settings</a></li>
 	    </ul>
 	     <ul class="nav navbar-nav navbar-right">
         	<li><a class="navbar-brand" href="signin.jsp">Sign Out</a></li>
@@ -106,18 +106,18 @@
 				<h3 class="blueFont" >Update Zipcode </h3>
 				<div class="form-group"> 
 					 <label for="curr_zip"> Current Zipcode:</label><br>
-					 <input type="text" readonly id="curr_zip" class="form-control-plaintext" value="<%=db.shInfo.zipcode %>"> 
+					 <input style="color: gray"  type="text" readonly id="curr_zip" class="form-control-plaintext" value="<%=db.shInfo.zipcode %>"> 
 					 <br><label for="new_zipcode">New Zipcode:</label><br>
-					<input id="new_zipcode" type="text" name="new_zipcode">
+					<input style="color: gray"  id="new_zipcode" type="text" name="new_zipcode">
 					<%= ziperror %>
 				</div>
 		
 				<h3 class="blueFont">Update Number </h3>
 			 	<div  style="font-size: 16px" class="form-group">
 				<label for="curr_num"> Current Phone Number:</label><br>
-				<input  id="curr_num" type="text" readonly class="form-control-plaintext" value="<%=db.shInfo.phoneNumber %>">
+				<input  style="color: gray"  id="curr_num" type="text" readonly class="form-control-plaintext" value="<%=db.shInfo.phoneNumber %>">
 				<br><label for="new_phone">New Number:</label><br>
-				<input  id="new_phone" type="tel" name="new_phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				<input style="color: gray"  id="new_phone" type="tel" name="new_phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 				<%= phoneerror %>
 				<h3 class="blueFont" >Update Other</h3>
 				Do you allow children ?
@@ -144,16 +144,16 @@
 			   	 	<label for="curr_email"> Current Email:</label><br>
 			      	<input style="color: gray" id="curr_email" type="text" readonly class="form-control-plaintext"  value="<%=db.user.email %>">
 					<br><label for="new_email">New Email:</label><br>
-					<input id="new_email" type="text" name="new_email">
+					<input style="color: gray"  id="new_email" type="text" name="new_email">
 					<%= emailerror %>
 				 </div>
 				 <h3 class="blueFont">Update Password</h3>
 				 <div style="font-size: 16px" class="form-group">
 					<label for="curr_pass">Please re-enter your current password:</label><br>
-					<input  id="curr_pass" type="text" name="current_password">
+					<input style="color: gray"  id="curr_pass" type="text" name="current_password">
 					<%= currpassworderror %>
 					<br><label for="new_pass">New password:</label><br>
-					<input  id="new_pass" type="text" name="new_password">
+					<input style="color: gray"   id="new_pass" type="text" name="new_password">
 					<%= newpassworderror %>
 				</div>
 			</div>
